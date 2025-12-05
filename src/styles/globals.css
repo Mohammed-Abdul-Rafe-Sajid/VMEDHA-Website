@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+  color: #1a35cc;
+  overflow-x: hidden;
+}
+
+/* Glass Morphism Effect */
+.glass {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+}
+
+.glass-dark {
+  @apply bg-royal-900/20 backdrop-blur-md border border-royal-500/20 rounded-2xl;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-royal-600 to-royal-400 bg-clip-text text-transparent;
+}
+
+/* Smooth Transitions */
+.transition-smooth {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+/* Glow Effects */
+.glow-effect {
+  @apply shadow-lg shadow-royal-500/50;
+}
+
+.glow-effect-sm {
+  @apply shadow-md shadow-royal-500/30;
+}
+
+/* Hover Scale */
+.hover-scale {
+  @apply hover:scale-105 transition-transform duration-300;
+}
+
+/* Button Base */
+.btn-base {
+  @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300 cursor-pointer;
+}
+
+.btn-primary {
+  @apply btn-base bg-gradient-to-r from-royal-600 to-royal-500 text-white shadow-lg shadow-royal-600/50 hover:shadow-xl hover:shadow-royal-600/70 hover:scale-105;
+}
+
+.btn-secondary {
+  @apply btn-base bg-white/20 text-royal-900 border border-royal-500/50 hover:bg-white/30 hover:border-royal-500;
+}
+
+/* Link Hover Effect */
+a {
+  @apply relative transition-colors duration-300;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f4ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(135deg, #2e5aff, #4a74ff);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(135deg, #1e40e8, #2e5aff);
+}

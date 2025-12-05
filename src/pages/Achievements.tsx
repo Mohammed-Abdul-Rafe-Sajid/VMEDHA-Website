@@ -24,7 +24,7 @@ const CountUp: React.FC<{ end: number; suffix?: string; duration?: number }> = (
 
     let start = 0;
     let rafId: number;
-    const step = (timestampStart: number | null, lastTimeRef: { last: number | null }) => {
+    const step = (_timestampStart: number | null, lastTimeRef: { last: number | null }) => {
       if (start === 0) start = performance.now();
       const now = performance.now();
       const elapsed = now - start;

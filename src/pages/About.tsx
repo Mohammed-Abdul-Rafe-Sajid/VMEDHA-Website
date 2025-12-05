@@ -8,7 +8,7 @@ import { useInView, useAnimation } from "framer-motion";
 import { useState, useRef } from "react";
 
 import { FadeIn, SlideIn } from '../components/MotionWrapper'
-import { SectionTitle, Card } from '../components/Card'
+import { SectionTitle} from '../components/Card'
 import { Counter } from '../components/Counter';
 const About: React.FC = () => {
   // const timeline = [
@@ -102,7 +102,6 @@ const leaders = [
     linkedin: "https://linkedin.com/in/"
   },
 ];
-const carouselRef = useRef(null);
 // in-view detection: start auto-scroll only when viewport is visible
 const inViewRef = useRef<HTMLDivElement | null>(null);
 const isInView = useInView(inViewRef, { amount: 0.3 }); // 30% visible

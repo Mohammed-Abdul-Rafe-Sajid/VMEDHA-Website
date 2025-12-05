@@ -1,7 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
-import { SectionTitle } from "../components/Card";
-import { ArrowRight } from "lucide-react";
 
 const pastEvents = [
   {

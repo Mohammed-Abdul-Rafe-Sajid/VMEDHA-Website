@@ -57,7 +57,7 @@ const leaders = [
     name: "Mohammed Abdul Rafe Sajid",
     role: "President",
     image: "/rafe.jpg",
-    linkedin: "https://linkedin.com/in/member1"
+    linkedin: "https://www.linkedin.com/in/mohammed-abdul-rafe-sajid-49a716291/"
   },
   {
     name: "Shashidhar Nagunuri",
